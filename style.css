@@ -144,7 +144,7 @@ body {
 }
 #screen {
   font-size: 56px;
-  padding: 20px 8px;
+  padding: 20px 10px;
   text-align: right;
   color: #fff;
 }
@@ -200,6 +200,12 @@ body {
   border-radius: 50%;
  
 }
+.triple_btn:hover {
+  border-radius: 0;
+}
+.double_btn:hover {
+  border-radius: 0;
+}
 
 .btn_left:hover {
   background-color: rgb(31, 30, 30);
@@ -242,7 +248,7 @@ body {
   }
   #screen {
     font-size: 50px;
-    padding: 20px 7px;
+    padding: 20px 10px;
     text-align: right;
     color: #fff;
   }
