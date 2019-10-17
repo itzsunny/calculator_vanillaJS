@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* calculator */
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(80, 78, 78);
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: black;
+  box-shadow: 1px 1px 4px rgba(255,255,255,0.5);
+}
+#screen {
+  font-size: 56px;
+  padding: 20px 8px;
+  text-align: right;
+  color: #fff;
+}
+.calculator_row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  border:none;
+  background-color: chartreuse;
+}
+
+.btn {
+  height: 104px;
+  width: 25%;
+  background-color: chartreuse;
+  cursor: pointer;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  transition: all ease-out .2s;
+  padding: 0 0.2rem;
+  outline: none;
+}
+.btn_left {
+  border-left: 1px solid #000;
+  background-color: rgb(0, 0, 0);
+  border-radius: 0;
+  color: chartreuse;
+}
+.double_btn {
+  width: 49.9%;
+  border-radius: 0;
+  border: none;
+  background-color: chartreuse;
+  font-size: 2.5rem;
+  outline: none;
+}
+
+.triple_btn {
+  width: 75%;
+  border: none;
+  border-radius: 0;
+  background-color: chartreuse;
+  font-size: 2.5rem;
+  outline: none;
+}
+.btn:hover {
+  background-color: rgb(153, 243, 94);
+
+}
+.btn:active {
+  background-color: rgb(166, 255, 0);
+ 
+}
+
+.btn_left:hover {
+  background-color: rgb(31, 30, 30);
+  border-radius: 0;
+}
+.btn_left:active {
+  background-color: rgb(49, 48, 48);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+  }
+  .wrapper {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+  }
+  .wrapper {
+    width: 100%;
+    box-shadow: none;
+  }
+  #screen {
+    font-size: 50px;
+    padding: 20px 7px;
+    text-align: right;
+    color: #fff;
+  }
+  .btn {
+    height:95px;
+    border-radius: 0;
+  }
+}
