@@ -5,7 +5,12 @@ const btn = document.getElementById("calculator_buttons");
 let screen = document.getElementById("screen");
 
 btn.addEventListener("click", event => {
+  function audioPlay(url){
+    var audio = new Audio(url);
+    audio.play();
+  }
   handleClick(event.target.innerText);
+  audioPlay('click.mp3')
 });
 
 function handleClick(value) {
@@ -73,8 +78,8 @@ function handleMathOperation(convertedNum) {
 
 function displayValue() {
   screen.innerText = bufferValue;
-  if (bufferValue.length > 10){
-      bufferValue = '0' ; 
+  if (bufferValue.length > 9){
+      bufferValue = 0; 
   }
   }
 
