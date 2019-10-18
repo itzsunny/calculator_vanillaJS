@@ -9,8 +9,8 @@ btn.addEventListener("click", event => {
     var audio = new Audio(url);
     audio.play();
   }
-  handleClick(event.target.innerText);
   audioPlay('click.mp3')
+  handleClick(event.target.innerText);
 });
 
 function handleClick(value) {
