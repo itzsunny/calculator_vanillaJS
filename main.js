@@ -66,6 +66,8 @@ function handleMathOperation(convertedNum) {
     totalValue *= convertedNum;
   } else if (previousOperator === "+") {
     totalValue += convertedNum;
+  }else if (previousOperator === "-") {
+    totalValue -= convertedNum;
   }
 }
 

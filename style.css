@@ -163,7 +163,7 @@ body {
   cursor: pointer;
   font-size: 2.5rem;
   border: none;
-  transition: all ease-out 0.3s;
+  transition: all ease-out 0.1s;
   padding: 0 0.2rem;
   outline: none;
 }
@@ -176,6 +176,7 @@ body {
 .double_btn {
   width: 49.9%;
   border-radius: 0;
+  font-size: 3rem ;
   border: none;
   color:rgb(255, 255, 255);
   background-color: chartreuse;
@@ -205,6 +206,7 @@ body {
 }
 .double_btn:hover {
   border-radius: 0;
+  font-size:3.2rem;
 }
 
 .btn_left:hover {
