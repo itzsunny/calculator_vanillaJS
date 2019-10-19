@@ -5,11 +5,11 @@ const btn = document.getElementById("calculator_buttons");
 let screen = document.getElementById("screen");
 
 btn.addEventListener("click", event => {
-  function audioPlay(url){
+  function audioPlay(url) {
     var audio = new Audio(url);
     audio.play();
   }
-  audioPlay('click.mp3')
+  audioPlay("click.mp3");
   handleClick(event.target.innerText);
 });
 
@@ -25,7 +25,9 @@ function handleNumber(value) {
   if (bufferValue === "0") {
     bufferValue = value;
   } else {
-    bufferValue += value;
+    if(bufferValue.length <= 9){
+      bufferValue += value;
+    }
   }
 }
 
@@ -71,7 +73,7 @@ function handleMathOperation(convertedNum) {
     totalValue *= convertedNum;
   } else if (previousOperator === "+") {
     totalValue += convertedNum;
-  }else if (previousOperator === "-") {
+  } else if (previousOperator === "-") {
     totalValue -= convertedNum;
   }
 }
@@ -79,7 +81,6 @@ function handleMathOperation(convertedNum) {
 function displayValue() {
   screen.innerText = bufferValue;
   if (bufferValue.length > 9){
-      bufferValue = 0; 
+    // bufferValue = '0';
   }
-  }
-
+}

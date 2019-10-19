@@ -147,6 +147,7 @@ body {
   padding: 20px 10px;
   text-align: right;
   color: #fff;
+  overflow: hidden;
 }
 .calculator_row {
   display: flex;
